@@ -23,14 +23,26 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        segue.destination.navigationItem.title = userNameTextField.text
+        guard let sender = sender as? UIButton else { return }
+            
+        if sender == forgotUserName {
+            segue.destination.navigationItem.title = "Forgot Username"
+        } else if sender == forgotPassword {
+            segue.destination.navigationItem.title = "Forgot Password"
+        } else {
+            segue.destination.navigationItem.title = userNameTextField.text
+        }
+        
+
     }
 
     
     @IBAction func forgotUserNameBtn(_ sender: UIButton) {
+        performSegue(withIdentifier: "forgotUsernameOrPassword", sender: forgotUserName)
     }
     
     @IBAction func forgotPasswordBtn(_ sender: UIButton) {
+        performSegue(withIdentifier: "forgotUsernameOrPassword", sender: forgotPassword)
     }
     
     
