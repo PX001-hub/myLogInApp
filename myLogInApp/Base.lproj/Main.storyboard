@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Log In-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="myLogInApp" customModuleProvider="target" sceneMemberID="viewController">
@@ -73,7 +73,7 @@
                             <constraint firstItem="QJj-Rg-heo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JHz-VI-fQ9"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="cIG-cZ-C7h"/>
+                    <navigationItem key="navigationItem" title="Log In" largeTitleDisplayMode="always" id="cIG-cZ-C7h"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -87,7 +87,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="vwo-ht-vpH"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="1" green="0.43529411764705883" blue="0.70980392156862748" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="bXS-ls-T5h"/>
                 </viewController>
@@ -115,9 +115,6 @@
         </scene>
     </scenes>
     <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
         <systemColor name="systemTealColor">
             <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
