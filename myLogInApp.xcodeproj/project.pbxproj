@@ -15,12 +15,12 @@
 		2C8CD21928A95FC80078A903 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C8CD21728A95FC80078A903 /* Main.storyboard */; };
 		2C8CD21B28A95FC90078A903 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C8CD21A28A95FC90078A903 /* Assets.xcassets */; };
 		2C8CD21E28A95FC90078A903 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C8CD21C28A95FC90078A903 /* LaunchScreen.storyboard */; };
+		2C8D237D28AD8A8D0008A375 /* shutterstock-1.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2C8D237C28AD8A8D0008A375 /* shutterstock-1.pdf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2C7AD45128AD7ACF00330BEE /* UserVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserVC.swift; sourceTree = "<group>"; };
 		2C7AD45328AD7AE800330BEE /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
-		2C7AD45528AD82FD00330BEE /* shutterstock-1041249343.webp */ = {isa = PBXFileReference; lastKnownFileType = file; path = "shutterstock-1041249343.webp"; sourceTree = "<group>"; };
 		2C8CD20E28A95FC80078A903 /* myLogInApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myLogInApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C8CD21128A95FC80078A903 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2C8CD21328A95FC80078A903 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -29,6 +29,7 @@
 		2C8CD21A28A95FC90078A903 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2C8CD21D28A95FC90078A903 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2C8CD21F28A95FC90078A903 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C8D237C28AD8A8D0008A375 /* shutterstock-1.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "shutterstock-1.pdf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,7 +70,7 @@
 				2C8CD21728A95FC80078A903 /* Main.storyboard */,
 				2C8CD21A28A95FC90078A903 /* Assets.xcassets */,
 				2C8CD21C28A95FC90078A903 /* LaunchScreen.storyboard */,
-				2C7AD45528AD82FD00330BEE /* shutterstock-1041249343.webp */,
+				2C8D237C28AD8A8D0008A375 /* shutterstock-1.pdf */,
 				2C8CD21F28A95FC90078A903 /* Info.plist */,
 			);
 			path = myLogInApp;
@@ -136,6 +137,7 @@
 				2C8CD21E28A95FC90078A903 /* LaunchScreen.storyboard in Resources */,
 				2C8CD21B28A95FC90078A903 /* Assets.xcassets in Resources */,
 				2C8CD21928A95FC80078A903 /* Main.storyboard in Resources */,
+				2C8D237D28AD8A8D0008A375 /* shutterstock-1.pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
