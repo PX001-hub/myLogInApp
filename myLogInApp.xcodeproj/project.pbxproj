@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2C7AD45228AD7ACF00330BEE /* UserVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7AD45128AD7ACF00330BEE /* UserVC.swift */; };
-		2C7AD45428AD7AE800330BEE /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7AD45328AD7AE800330BEE /* HomeVC.swift */; };
+		2C5829C828B2A72200FF1CBA /* RobotsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5829C728B2A72200FF1CBA /* RobotsVC.swift */; };
+		2C5829CA28B2ABAB00FF1CBA /* CreatureType .swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5829C928B2ABAB00FF1CBA /* CreatureType .swift */; };
+		2C7AD45228AD7ACF00330BEE /* AnimalsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7AD45128AD7ACF00330BEE /* AnimalsVC.swift */; };
+		2C7AD45428AD7AE800330BEE /* AliensVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C7AD45328AD7AE800330BEE /* AliensVC.swift */; };
 		2C8CD21228A95FC80078A903 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8CD21128A95FC80078A903 /* AppDelegate.swift */; };
 		2C8CD21428A95FC80078A903 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8CD21328A95FC80078A903 /* SceneDelegate.swift */; };
 		2C8CD21628A95FC80078A903 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8CD21528A95FC80078A903 /* LogInViewController.swift */; };
@@ -19,8 +21,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2C7AD45128AD7ACF00330BEE /* UserVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserVC.swift; sourceTree = "<group>"; };
-		2C7AD45328AD7AE800330BEE /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		2C5829C728B2A72200FF1CBA /* RobotsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RobotsVC.swift; sourceTree = "<group>"; };
+		2C5829C928B2ABAB00FF1CBA /* CreatureType .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CreatureType .swift"; sourceTree = "<group>"; };
+		2C7AD45128AD7ACF00330BEE /* AnimalsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalsVC.swift; sourceTree = "<group>"; };
+		2C7AD45328AD7AE800330BEE /* AliensVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AliensVC.swift; sourceTree = "<group>"; };
 		2C8CD20E28A95FC80078A903 /* myLogInApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myLogInApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C8CD21128A95FC80078A903 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2C8CD21328A95FC80078A903 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -62,18 +66,52 @@
 		2C8CD21028A95FC80078A903 /* myLogInApp */ = {
 			isa = PBXGroup;
 			children = (
+				2C8D237E28AEAE080008A375 /* ViewControllers */,
+				2C8D237F28AEAE360008A375 /* Models */,
+				2C8D238028AEAE650008A375 /* Extentions */,
 				2C8CD21128A95FC80078A903 /* AppDelegate.swift */,
 				2C8CD21328A95FC80078A903 /* SceneDelegate.swift */,
-				2C8CD21528A95FC80078A903 /* LogInViewController.swift */,
-				2C7AD45128AD7ACF00330BEE /* UserVC.swift */,
-				2C7AD45328AD7AE800330BEE /* HomeVC.swift */,
+				2C8D238128AEAEA00008A375 /* Storyboards */,
 				2C8CD21728A95FC80078A903 /* Main.storyboard */,
 				2C8CD21A28A95FC90078A903 /* Assets.xcassets */,
-				2C8CD21C28A95FC90078A903 /* LaunchScreen.storyboard */,
 				2C8D237C28AD8A8D0008A375 /* shutterstock-1.pdf */,
+				2C8CD21C28A95FC90078A903 /* LaunchScreen.storyboard */,
 				2C8CD21F28A95FC90078A903 /* Info.plist */,
 			);
 			path = myLogInApp;
+			sourceTree = "<group>";
+		};
+		2C8D237E28AEAE080008A375 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				2C7AD45128AD7ACF00330BEE /* AnimalsVC.swift */,
+				2C7AD45328AD7AE800330BEE /* AliensVC.swift */,
+				2C5829C728B2A72200FF1CBA /* RobotsVC.swift */,
+				2C8CD21528A95FC80078A903 /* LogInViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		2C8D237F28AEAE360008A375 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2C5829C928B2ABAB00FF1CBA /* CreatureType .swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2C8D238028AEAE650008A375 /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extentions;
+			sourceTree = "<group>";
+		};
+		2C8D238128AEAEA00008A375 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,10 +187,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C8CD21628A95FC80078A903 /* LogInViewController.swift in Sources */,
-				2C7AD45428AD7AE800330BEE /* HomeVC.swift in Sources */,
+				2C7AD45428AD7AE800330BEE /* AliensVC.swift in Sources */,
 				2C8CD21228A95FC80078A903 /* AppDelegate.swift in Sources */,
 				2C8CD21428A95FC80078A903 /* SceneDelegate.swift in Sources */,
-				2C7AD45228AD7ACF00330BEE /* UserVC.swift in Sources */,
+				2C7AD45228AD7ACF00330BEE /* AnimalsVC.swift in Sources */,
+				2C5829C828B2A72200FF1CBA /* RobotsVC.swift in Sources */,
+				2C5829CA28B2ABAB00FF1CBA /* CreatureType .swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
