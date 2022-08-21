@@ -3,6 +3,7 @@
     <device id="retina3_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -130,12 +131,12 @@
                             <constraint firstItem="nCg-Oi-LVX" firstAttribute="centerY" secondItem="HdS-EQ-gAB" secondAttribute="centerY" id="ibP-Oo-0hk"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" systemItem="featured" id="rtb-KZ-g58"/>
+                    <tabBarItem key="tabBarItem" title="Animal " selectedImage="pawprint.circle.fill" catalog="system" id="rtb-KZ-g58"/>
                     <navigationItem key="navigationItem" title="Orange" id="bWk-lA-AUJ"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ze5-rX-6iC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4005" y="-765"/>
+            <point key="canvasLocation" x="3703" y="-619"/>
         </scene>
         <!--Pink-->
         <scene sceneID="Ylx-AH-nIO">
@@ -170,6 +171,9 @@
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" title="Log out"/>
+                                        <connections>
+                                            <segue destination="sUW-oH-gy8" kind="unwind" unwindAction="unwindSegue:" id="ohC-CI-C4f"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -188,8 +192,9 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mCc-Ff-MAi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="sUW-oH-gy8" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="4005" y="70"/>
+            <point key="canvasLocation" x="4044" y="70"/>
         </scene>
         <!--Yellow-->
         <scene sceneID="tn1-aG-r9Q">
@@ -224,12 +229,12 @@
                             <constraint firstItem="Yu4-Fl-z3A" firstAttribute="centerX" secondItem="Jew-4c-BgF" secondAttribute="centerX" id="ynz-AY-AiC"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" systemItem="mostViewed" id="ZCR-WV-14v"/>
+                    <tabBarItem key="tabBarItem" title="Automate" selectedImage="gearshape" catalog="system" id="ZCR-WV-14v"/>
                     <navigationItem key="navigationItem" title="Yellow" id="mym-2W-KcF"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Ay-DV-Q3o" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4005" y="931"/>
+            <point key="canvasLocation" x="3675" y="845"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="kpe-2a-UVh">
@@ -244,17 +249,21 @@
                     </tabBar>
                     <connections>
                         <segue destination="mwf-MP-Mas" kind="relationship" relationship="viewControllers" id="Ayf-MQ-e0f"/>
+                        <segue destination="1A1-RO-4sA" kind="relationship" relationship="viewControllers" id="11C-Pq-K6b"/>
+                        <segue destination="2sR-pa-eVE" kind="relationship" relationship="viewControllers" id="MGb-ku-AeQ"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lz0-u7-K2V" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2563" y="70"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Person-->
         <scene sceneID="s5B-Dh-qOa">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="mwf-MP-Mas" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" systemItem="bookmarks" id="Bn3-qi-Yi9"/>
+                    <tabBarItem key="tabBarItem" title="Person" id="Bn3-qi-Yi9">
+                        <imageReference key="selectedImage" image="person.crop.square.fill" catalog="system" symbolScale="large"/>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="agN-9e-fbf">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="56"/>
@@ -270,7 +279,14 @@
             <point key="canvasLocation" x="3283" y="70"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="M3r-sk-m6G"/>
+        <segue reference="nJW-4m-CXA"/>
+    </inferredMetricsTieBreakers>
     <resources>
+        <image name="gearshape" catalog="system" width="128" height="121"/>
+        <image name="pawprint.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="person.crop.square.fill" catalog="system" width="128" height="114"/>
         <systemColor name="systemOrangeColor">
             <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
